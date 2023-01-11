@@ -1,0 +1,109 @@
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text)*/
+  --Dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+  --Dark-moderate-cyan: hsl(168, 34%, 41%); /*(footer)*/
+
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+header {
+  background-image: url(../images/mobile/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Barlow", sans-serif;
+  color: var(--White);
+  text-align: center;
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+  position: relative;
+}
+main {
+  height: 100vh;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+.display-grid {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  align-items: center;
+}
+.display-grid img,
+source {
+  width: 100%;
+}
+.content-texts {
+  padding: 4rem 2.5rem;
+}
+.content-texts .sub-title {
+  font-size: clamp(4rem, 5vw, 5.5rem);
+  /* font-size: clamp(4rem, 2.1699rem + 1.4085vw, 10rem); */
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.content-texts .text {
+  font-size: clamp(1.5rem, 2vw, 2.2rem); /**/
+  font-family: "Barlow", sans-serif;
+  color: var(--Very-dark-grayish-blue);
+  margin-bottom: 2rem;
+  line-height: 150%;
+}
+.content-texts .link {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  position: relative;
+}
+.content-texts .yellow::before {
+  background-color: var(--Yellow);
+}
+
+.content-texts .link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  height: 45%;
+  transition: all 0.3s;
+  opacity: 0.4;
+}
+.content-texts .link:hover::before {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 920px) {
+  header {
+    background-image: url(../images/desktop/image-header.jpg);
+  }
+  .display-grid {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  .img-right {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .content-texts {
+    padding: 1.2rem max(40px, 10vw);
+  }
+}

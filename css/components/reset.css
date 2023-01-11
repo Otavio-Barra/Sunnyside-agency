@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Fraunces", serif;
+}
+
+.container {
+  width: min(90vw, 1440px);
+  margin: 0 auto;
+}

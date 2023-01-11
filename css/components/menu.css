@@ -1,0 +1,114 @@
+.menu {
+  position: absolute;
+  top: 12rem;
+  left: 0;
+  background-color: var(--White);
+  text-align: center;
+  width: 100%;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  padding: 5rem;
+}
+
+.nav.active-menu .menu {
+  visibility: visible;
+  opacity: 1;
+}
+.menu::before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  border-left: 1px solid transparent;
+  border-top: 3rem solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: 3rem solid #fff;
+}
+.menu li {
+  padding: 2rem 0;
+}
+.menu li a {
+  color: var(--Dark-grayish-blue);
+  font-size: 2.2rem;
+}
+.btn-contact {
+  background-color: var(--Yellow);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border-radius: 5rem;
+}
+.btn-menu {
+  background: none;
+  border: none;
+}
+
+#menu-mobile > span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 99999px;
+  background-color: var(--White);
+}
+#menu-mobile > span:not(:last-child) {
+  margin-bottom: 7px;
+}
+#menu-mobile,
+#menu-mobile > span {
+  transition: all 0.2s ease-in-out;
+}
+#menu-mobile.active {
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+#menu-mobile.active > span:nth-child(2) {
+  width: 0;
+}
+#menu-mobile.active > span:nth-child(1),
+#menu-mobile.active > span:nth-child(3) {
+  transition-delay: 0.3s;
+}
+#menu-mobile.active > span:nth-child(1) {
+  transform: translateY(9px);
+}
+#menu-mobile.active > span:nth-child(3) {
+  transform: translateY(-9px) rotate(90deg);
+}
+@media only screen and (min-width: 768px) {
+  .btn-menu {
+    display: none;
+  }
+  .menu {
+    position: initial;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    background-color: transparent;
+    text-align: initial;
+    visibility: initial;
+    opacity: 1;
+    padding: 0;
+  }
+  .menu li a {
+    color: var(--White);
+    transition: all 0.3s ease-in-out;
+  }
+  .menu li a:hover {
+    color: #000;
+  }
+  .btn-contact {
+    background-color: var(--White);
+    font-size: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--White);
+  }
+}
