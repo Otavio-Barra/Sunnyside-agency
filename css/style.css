@@ -42,22 +42,25 @@ section {
   text-align: center;
   align-items: center;
 }
+
 .display-grid img,
-source {
+source,
+picture {
   width: 100%;
+  height: 100%;
 }
 .content-texts {
-  padding: 4rem 2.5rem;
+  padding: 4rem 2rem;
 }
 .content-texts .sub-title {
-  font-size: clamp(4rem, 5vw, 5.5rem);
+  font-size: clamp(4rem, 4vw, 5rem);
   /* font-size: clamp(4rem, 2.1699rem + 1.4085vw, 10rem); */
   color: var(--Very-dark-desaturated-blue);
   font-weight: 900;
   margin-bottom: 2rem;
 }
 .content-texts .text {
-  font-size: clamp(1.5rem, 2vw, 2.2rem); /**/
+  font-size: clamp(1.8rem, 2vw, 2.1rem); /**/
   font-family: "Barlow", sans-serif;
   color: var(--Very-dark-grayish-blue);
   margin-bottom: 2rem;
@@ -73,6 +76,9 @@ source {
 }
 .content-texts .yellow::before {
   background-color: var(--Yellow);
+}
+.content-texts .pink::before {
+  background-color: var(--Soft-red);
 }
 
 .content-texts .link::before {
@@ -90,6 +96,48 @@ source {
 .content-texts .link:hover::before {
   opacity: 1;
 }
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.services {
+  flex: 1 1 45rem;
+  height: 65rem;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.graphic {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--Dark-desaturated-cyan);
+}
+.photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--Dark-blue);
+}
+.texts {
+  margin-bottom: 5rem;
+  padding: 0 5vw;
+}
+.texts h3 {
+  font-size: clamp(3rem, 3vw, 4.2rem); /*3rem,5vw*/
+  margin-bottom: 2.5rem;
+  font-weight: 900;
+}
+.texts p {
+  font-size: clamp(1.7rem, 2vw, 2rem); /*1.7,3vw*/
+  line-height: 150%;
+  font-weight: 700;
+}
 
 @media only screen and (min-width: 920px) {
   header {
@@ -104,6 +152,15 @@ source {
     grid-row: 1;
   }
   .content-texts {
-    padding: 1.2rem max(40px, 10vw);
+    padding: 1.2rem max(40px, 11vw);
+  }
+  .graphic {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+  .photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+  .texts {
+    padding: 0 clamp(5rem, 12vw, 22rem);
   }
 }
