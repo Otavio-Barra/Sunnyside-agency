@@ -6,12 +6,14 @@
   border: none;
   list-style: none;
 }
+
 html {
   font-size: 62.5%;
   font-family: "Fraunces", serif;
+  scroll-behavior: smooth;
 }
 
 .container {
-  width: min(90vw, 1440px);
+  width: 90vw;
   margin: 0 auto;
 }
