@@ -18,7 +18,7 @@
 .menu::before {
   content: "";
   position: absolute;
-  top: -4rem;
+  top: -2.8rem;
   right: 0;
   border-left: 1px solid transparent;
   border-top: 3rem solid transparent;
