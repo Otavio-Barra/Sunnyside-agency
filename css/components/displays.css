@@ -1,0 +1,11 @@
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.display-grid {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  align-items: center;
+}

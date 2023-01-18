@@ -6,3 +6,69 @@
   letter-spacing: 1.2rem;
   margin: clamp(9.4rem, 25vw, 10.5rem) 0;
 }
+
+.sub-title {
+  font-size: clamp(4rem, 4vw, 5rem);
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: clamp(1.8rem, 2vw, 2.1rem);
+  font-family: "Barlow", sans-serif;
+  color: var(--Very-dark-grayish-blue);
+  margin-bottom: 2rem;
+  line-height: 150%;
+}
+
+.content-texts .link {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  position: relative;
+}
+.content-texts .link:hover::before {
+  opacity: 1;
+}
+
+.texts h3 {
+  font-size: clamp(3rem, 3vw, 4.2rem);
+  margin-bottom: 2.5rem;
+  font-weight: 900;
+}
+.texts p {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  line-height: 150%;
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+}
+
+.testimunials h3 {
+  color: var(--Grayish-blue);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  margin-bottom: 4rem;
+}
+.depoiment .text-depoiment {
+  font-family: "Barlow", sans-serif;
+  font-size: clamp(1.85rem, 1.8vw, 2.2rem);
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 3rem;
+  line-height: 150%;
+}
+.depoiment .info-profile .name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 1rem;
+}
+.depoiment .info-profile .job {
+  font-family: "Barlow", sans-serif;
+  color: var(--Grayish-blue);
+  font-size: 1.4rem;
+}
