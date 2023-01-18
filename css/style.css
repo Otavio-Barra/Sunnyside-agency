@@ -185,6 +185,16 @@ picture {
   color: var(--Grayish-blue);
   font-size: 1.4rem;
 }
+.galery {
+  display: grid;
+  gap: 0;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.galery picture img {
+  width: 100%;
+  height: 100%;
+}
 @media only screen and (min-width: 920px) {
   header {
     background-image: url(../images/desktop/image-header.jpg);
