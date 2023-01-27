@@ -1,6 +1,6 @@
 @media only screen and (min-width: 920px) {
   header {
-    background-image: url(../images/desktop/image-header.jpg);
+    background-image: url(../../images/desktop/image-header.jpg);
   }
   .display-grid {
     grid-template-columns: 1fr 1fr;
@@ -14,10 +14,10 @@
     padding: 1.2rem max(40px, 11vw);
   }
   .graphic {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-image: url(../../images/desktop/image-graphic-design.jpg);
   }
   .photography {
-    background-image: url(../images/desktop/image-photography.jpg);
+    background-image: url(../../images/desktop/image-photography.jpg);
   }
   .texts {
     padding: 0 clamp(5rem, 12vw, 22rem);
